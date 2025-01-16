@@ -8,12 +8,10 @@ metadata:
   name: default
 spec:
   calicoNetwork:
-    bgp: Enabled
-    hostPorts: Enabled
     ipPools:
       - blockSize: 26
         cidr: 192.168.0.0/16
-        encapsulation: IPIPCrossSubnet
+        encapsulation: VXLAN
         natOutgoing: Enabled
         nodeSelector: all()
   registry: quay.io
@@ -26,4 +24,4 @@ helm install calico projectcalico/tigera-operator --version v3.27.5 --namespace 
 kubectl taint node node1.example.com node-role.kubernetes.io/control-plane:NoSchedule-
 
 kubectl apply -f calico-quay-crd.yaml
-kubectl -n calico-system get pod 
+kubectl -n calico-system get pod
