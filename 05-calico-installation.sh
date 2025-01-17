@@ -14,6 +14,7 @@ spec:
         encapsulation: VXLAN
         natOutgoing: Enabled
         nodeSelector: all()
+    vethMTU: 1400
   registry: quay.io
 EOF
 
