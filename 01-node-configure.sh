@@ -58,5 +58,10 @@ cat <<EOF> /etc/hosts
 192.168.10.20 node2.example.com node2
 192.168.10.30 node3.example.com node3
 192.168.10.100 storage.example.com storage
+#192.168.10.11 node5.example.com node5
+#192.168.10.12 node6.example.com node6
+#192.168.10.254 lb.example.com lb
+
+
 EOF
 
