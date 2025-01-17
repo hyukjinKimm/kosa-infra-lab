@@ -11,7 +11,8 @@ spec:
     ipPools:
       - blockSize: 26
         cidr: 192.168.0.0/16
-        encapsulation: VXLAN
+        # 오픈스택 encapsulation: VXLAN
+        # hyperV encapsulation: VXLANCrossSubnet 
         natOutgoing: Enabled
         nodeSelector: all()
   registry: quay.io
