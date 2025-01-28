@@ -12,7 +12,7 @@ spec:
       - blockSize: 26
         cidr: 192.168.0.0/16
         # 오픈스택 encapsulation: VXLAN
-        # hyperV encapsulation: VXLANCrossSubnet 
+        encapsulation: VXLANCrossSubnet 
         natOutgoing: Enabled
         nodeSelector: all()
   registry: quay.io
@@ -22,7 +22,7 @@ helm repo add projectcalico https://docs.tigera.io/calico/charts
 kubectl create namespace tigera-operator
 helm install calico projectcalico/tigera-operator --version v3.27.5 --namespace tigera-operator
 
-kubectl taint node controller1.example.com node-role.kubernetes.io/control-plane:NoSchedule-
+kubectl taint node node1.example.com node-role.kubernetes.io/control-plane:NoSchedule-
 
 kubectl apply -f calico-quay-crd.yaml
 kubectl -n calico-system get pod
