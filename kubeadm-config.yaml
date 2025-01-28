@@ -2,9 +2,9 @@
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: InitConfiguration
 nodeRegistration:
-  name: "controller1.example.com"
+  name: "node1.example.com"
 localAPIEndpoint:
-  advertiseAddress: "192.168.10.10"
+  advertiseAddress: "192.168.0.10"
   bindPort: 6443
 bootstrapTokens:
   - token: "abcdef.0123456789abcdef"
@@ -23,5 +23,5 @@ networking:
   podSubnet: "192.168.0.0/16"
   serviceSubnet: "11.11.0.0/16"
   dnsDomain: "cluster.local"
-#controlPlaneEndpoint: "192.168.10.10:6443"
-controlPlaneEndpoint: "lb.example.com:6443"
+controlPlaneEndpoint: "192.168.0.10:6443"
+#controlPlaneEndpoint: "lb.example.com:6443"
