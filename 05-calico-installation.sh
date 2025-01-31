@@ -10,9 +10,9 @@ spec:
   calicoNetwork:
     ipPools:
       - blockSize: 26
-        cidr: 192.168.0.0/16
-        # 오픈스택 encapsulation: VXLAN
-        encapsulation: VXLANCrossSubnet 
+        cidr: 192.168.10.0/16
+        encapsulation: VXLAN
+        # 하이퍼브이 encapsulation: VXLANCrossSubnet 
         natOutgoing: Enabled
         nodeSelector: all()
   registry: quay.io
