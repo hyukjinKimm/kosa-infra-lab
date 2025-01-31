@@ -54,9 +54,9 @@ modprobe overlay
 cat <<EOF> /etc/hosts
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-192.168.0.10 node1.example.com node1
-192.168.0.20 node2.example.com node2
-192.168.0.30 node3.example.com node3
-192.168.0.40 storage.example.com storage
+192.168.10.10 node1.example.com node1
+192.168.10.20 node2.example.com node2
+192.168.10.30 node3.example.com node3
+192.168.10.40 storage.example.com storage
 EOF
 
