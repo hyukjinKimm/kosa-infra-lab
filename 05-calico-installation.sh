@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export KUBECONFIG=/etc/kubernetes/admin.conf
-export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/root/bin
 # Calico CRD YAML 파일 생성
 cat <<EOF> calico-quay-crd.yaml
 ---
