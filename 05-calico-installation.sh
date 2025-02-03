@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export KUBECONFIG=/etc/kubernetes/admin.conf
 cat <<EOF> calico-quay-crd.yaml
 ---
 apiVersion: operator.tigera.io/v1
