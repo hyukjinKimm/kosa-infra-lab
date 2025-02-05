@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export PATH=$PATH:/usr/local/bin
 dnf install git tar -y
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 mkdir ~/bin
