@@ -13,7 +13,7 @@ spec:
   calicoNetwork:
     ipPools:
       - blockSize: 26
-        cidr: 192.168.0.0/16
+        cidr: 10.10.0.0/24
         encapsulation: VXLAN
         # 하이퍼브이 encapsulation: VXLANCrossSubnet 
         natOutgoing: Enabled
