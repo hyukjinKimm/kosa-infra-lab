@@ -20,7 +20,7 @@ apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 kubernetesVersion: v1.27.16
 networking:
-  podSubnet: "192.168.10.0/24"
+  podSubnet: "192.168.10.128/25"
   serviceSubnet: "11.11.0.0/16"
   dnsDomain: "cluster.local"
 controlPlaneEndpoint: "192.168.10.10:6443"
