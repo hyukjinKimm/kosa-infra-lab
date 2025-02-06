@@ -60,6 +60,6 @@ cat <<EOF> /etc/hosts
 192.168.0.20 worker1.example.com worker1
 192.168.0.30 worker2.example.com worker2
 192.168.0.40 storage.example.com storage
-192.168.0.200 vip
+192.168.0.200 lb.example.com
 EOF
 
