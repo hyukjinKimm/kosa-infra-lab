@@ -5,4 +5,3 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 mkdir ~/bin
 sh get_helm.sh
 mv /usr/local/bin/helm ~/bin
-
